@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #000;
+  height: 100vh;
+}
+
+h1{
+    color: #111;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 700;
+    font-size: 3.5em;
+    letter-spacing: 10px;
+}
+
+h1 span{
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    animation: animate 2.5s ease-in-out infinite;
+}
+
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5){
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7){
+    animation-delay: 1.50s;
+}
+
+h1 span:nth-child(8){
+    animation-delay: 1.75s;
+}
+
+h1 span:nth-child(9){
+    animation-delay: 2s;
+}
+
+h1 span:nth-child(10){
+    animation-delay: 2.25s;
+}
+
+h1 span:nth-child(11){
+    animation-delay: 2.50s;
+}
+
+h1 span:nth-child(12){
+    animation-delay: 2.75s;
+}
+
+h1 span:nth-child(13){
+    animation-delay: 3s;
+}
+
+h1 span:nth-child(14){
+    animation-delay: 3.25s;
+}
+
+h1 span:nth-child(15){
+    animation-delay: 3.50s;
+}
+
+h1 span:nth-child(16){
+    animation-delay: 3.75s;
+}
+
+h1 span:nth-child(17){
+    animation-delay: 4s;
+}
+
+h1 span:nth-child(18){
+    animation-delay: 4.25s;
+}
+
+h1 span:nth-child(19){
+    animation-delay: 4.50s;
+}
+
+h1 span:nth-child(20){
+    animation-delay: 4.75s;
+}
+
+h1 span:nth-child(21){
+    animation-delay: 5s;
+}
+
+h1 span:nth-child(22){
+    animation-delay: 5.25s;
+}
+
+h1 span:nth-child(23){
+    animation-delay: 5.50s;
+}
+
+h1 span:nth-child(24){
+    animation-delay: 5.75s;
+}
+
+h1 span:nth-child(25){
+    animation-delay: 6s;
+}
+
+h1 span:nth-child(26){
+    animation-delay: 6.25s;
+}
+
+h1 span:nth-child(27){
+    animation-delay: 6.50s;
+}
+
+h1 span:nth-child(28){
+    animation-delay: 6.75s;
+}
+
+
+@keyframes animate {
+    0%,100%{
+        color: #fff;
+        filter: blur(1px);
+        text-shadow: 0 0 10px #06f, 0 0 20px #06f, 0 0 40px #06f, 0 0 60px #06f, 0 0 100px #06f;
+    }
+    5%,95%{
+        color: #333;
+        filter: blur(0px);
+        box-shadow: unset;
+    }
+}
+
+.anya-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: #F3F8FF;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 25%;
+    margin-right: 45%;
+    width: 15%;
+    height: 10%;
+}
+
+.anya-button2{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: #F3F8FF;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 25%;
+    margin-left: .5%;
+    width: 15%;
+    height: 10%;
+}
+
+.anya-button3{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: #F3F8FF;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 25%;
+    margin-left: 45%;
+    width: 15%;
+    height: 10%;
+}
+
+.anya-button2::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('../assets2/anya\ pic.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+}
+
+.anya-button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('../assets2/anya\ pic.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+}
+
+.anya-button3::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('../assets2/anya\ pic.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+}
+
+button a{
+    text-decoration: none;
+}
+
+.anya-button:hover {
+    background-color: #740c44;
+    transform: scale(1.05);
+}
+
+.anya-button2:hover{
+    background-color: #740c44;
+    transform: scale(1.05);
+}
+
+.anya-button3:hover{
+    background-color: #740c44;
+    transform: scale(1.05);
+}
+
+.anya-button:hover::before {
+    opacity: 0.4;
+    transform: scale(1);
+}
+
+.anya-button2:hover::before{
+    opacity: 0.4;
+    transform: scale(1);
+}
+
+.anya-button3:hover::before{
+    opacity: 0.4;
+    transform: scale(1);
+}
+
+.anya-button:active {
+    transform: scale(0.95);
+}
+
+.anya-button2:active{
+    transform: scale(0.95);
+}
+
+.anya-button3:active{
+    transform: scale(0.95);
+}

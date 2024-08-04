@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>August 1 Special Day Gift</title>
+    <link rel="stylesheet" type="text/css" href='../CSS/style.css'>
+    <link rel="icon" href="../icons/gift-icon.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="glowing_txt">
+        <h1>
+            <span>H</span>
+            <span>A</span>
+            <span>P</span>
+            <span>P</span>
+            <span>Y</span>
+            <span>N</span>
+            <span>A</span>
+            <span>T</span>
+            <span>I</span>
+            <span>O</span>
+            <span>N</span>
+            <span>A</span>
+            <span>L</span>
+            <span>G</span>
+            <span>I</span>
+            <span>R</span>
+            <span>L</span>
+            <span>F</span>
+            <span>R</span>
+            <span>I</span>
+            <span>E</span>
+            <span>N</span>
+            <span>D</span>
+            <span>'</span>
+            <span>S</span>
+            <span>D</span>
+            <span>A</span>
+            <span>Y</span>
+        </h1>
+    </div>
+
+    <button class="anya-button" id="anyaButton">
+        <a href="../HTML/letter.html"></a>For Letter
+    </button>
+
+    <button class="anya-button2" id="anyaBtn2">
+        <a href="../HTML/flower.html"></a>For Flower
+    </button>
+
+    <button class="anya-button3" id="anyaBttn3" type="button">
+        <a href="../HTML/PhotoAlbum.html"></a>For Photo Album
+    </button>
+
+    <script>
+        const buttons = document.querySelectorAll('.anya-button, .anya-button2, .anya-button3');
+    
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', () => {
+            const audio = new Audio('../assets2/anya waku waku.mp3');
+            audio.play();
+        });
+    });
+
+    document.getElementById('anyaButton').addEventListener('click', (e) => {
+        e.preventDefault();
+        const audio = new Audio('../assets2/anya waku waku.mp3');
+        audio.play();
+        setTimeout(() => {
+            window.location.href = '../HTML/letter.html';
+        }); // Delay navigation to allow sound to play
+    });
+
+    document.getElementById('anyaBtn2').addEventListener('click', (e) => {
+        e.preventDefault();
+        const audio = new Audio('../assets2/anya waku waku.mp3');
+        audio.play();
+        setTimeout(() => {
+            window.location.href = '../HTML/flower.html';
+        },); // Delay navigation to allow sound to play
+    });
+
+    document.getElementById('anyaBttn3').addEventListener('click', (e) => {
+        e.preventDefault();
+        const audio = new Audio('../assets2/anya waku waku.mp3');
+        audio.play();
+        setTimeout(() => {
+            window.location.href = '../HTML/PhotoAlbum.html';
+        }) // Delay navigation to allow sound to play
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+body{
+    background: url(../assets2/Anya-bg3.png);
+    overflow: hidden;
+  }
+  .gallery{
+      position:relative;
+      top:100px;
+      left:100px;
+  }
+  .gallery li{
+      position:absolute;
+      display:block;
+      margin:0;
+      list-style-type:none;
+      padding:10px 10px 30px 10px;
+      background-image: url(../assets2/Anya-bg1.png);
+      border:solid black 2px;
+      --webkit-box-shadow:2px 2px 4px #333333;
+      --webkit-transition: -webkit-transform 0.5s ease;
+      --moz-box-shadow:2px 2px 4px #333333;
+      --moz-transition: -moz-transform 0.5s ease;
+      box-shadow:2px 2px 4px #333333;
+      transition: transform 0.5s ease;
+  }
+  .gallery li.active{
+      -webkit-transform:rotate(0deg) !important;
+      -moz-transform:rotate(0deg) !important;
+      transform:rotate(0deg) !important;
+  }
+  .gallery img{
+      display:block;
+      width:160px;
+      -webkit-transition: width 0.75s;
+      -moz-transition: width 0.75s;
+      transition: width 0.75s;
+      border: solid black 2px;
+  }
+  .gallery .active img{
+      display:block;
+      width:320px;
+  }
+
+  .space {
+    height: 600px;
+  }
+
+  body.play-music {
+    animation: fadeIn 1s ease-in-out; /* Adjust the animation duration and timing function as needed */
+  }   
